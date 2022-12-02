@@ -1,0 +1,22 @@
+/* Google Font - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html,
+body {
+  @apply font-inter;
+}
+
+/* width */
+.scrollbar-primary::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+.scrollbar-primary:hover::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-primary/75 transition-all;
+}
